@@ -1,11 +1,21 @@
 public class Person {
     private String name;
     private String surname;
+    private String email;
 
 
-    public Person(String name, String surname) {
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public Person(String name, String surname, String email) {
         this.name = name;
         this.surname = surname;
+        this.email = email;
     }
 
     public String getName() {
@@ -28,7 +38,7 @@ public class Person {
     public String toString() {
         return "Person{" +
                 "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
+                ", surname='" + surname + '\'' + "email=" + email +
                 '}';
     }
 }
